@@ -1,0 +1,15 @@
+.animalFilter {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.animal__name {
+  border: 3px solid rgb(144, 148, 148);
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  color: orange;
+}
+

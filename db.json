@@ -1,0 +1,49 @@
+{
+  "animals": [
+    {
+      "id": 3,
+      "name": "Doggo",
+      "species": "dog"
+    },
+    {
+      "name": "Schoko",
+      "species": "dog",
+      "id": 5
+    },
+    {
+      "name": "Mia",
+      "species": "cat",
+      "id": 7
+    },
+    {
+      "name": "Minka",
+      "species": "cat",
+      "id": 4
+    },
+    {
+      "name": "Jack",
+      "species": "dog",
+      "id": 11
+    },
+    {
+      "name": "Gretta",
+      "species": "dog",
+      "id": 6
+    },
+    {
+      "name": "Luna",
+      "species": "cat",
+      "id": 12
+    },
+    {
+      "id": 47,
+      "name": "Lotte",
+      "species": "dog"
+    },
+    {
+      "id": 85,
+      "name": "Bella",
+      "species": "cat"
+    }
+  ]
+}

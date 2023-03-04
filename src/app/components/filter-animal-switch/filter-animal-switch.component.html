@@ -1,0 +1,22 @@
+<section class="animalFilter">
+
+  <div>
+    <mat-slide-toggle
+      (click)="onSwitch()"
+    >
+      {{filtervalue}}
+    </mat-slide-toggle>
+  </div>
+  
+  <h3>
+    {{animalValue}}
+  </h3>
+
+  <div *ngFor="let cat of animals">
+    
+    <h4 class="animal__name">
+      {{cat.name}}
+    </h4>
+  </div>
+
+</section>

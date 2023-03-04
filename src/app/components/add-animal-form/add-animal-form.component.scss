@@ -1,0 +1,22 @@
+.addAnimal__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.input {
+  padding: 5px;
+  border: 3px solid grey;
+  border-radius: 5px;
+}
+
+.button-add {
+  padding: 5px 10px;
+  color: orange;
+  border: 2px solid orange;
+  border-radius: 5px;
+  cursor: pointer;
+}

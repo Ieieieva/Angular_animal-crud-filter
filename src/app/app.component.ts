@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Animal, AnimalsService } from './services/animals.service';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'animals-form-app';
+  animals: Animal[] = []
+
+  constructor(private animalsService:AnimalsService) {}
+
+  ngOnInit() {
+    this.animalsService.getData().subscribe((response) => {
+      this.animals = response
+    })
+  }
+
+  onDeleteAnimal(animal: Animal) {
+    this.animalsService.deleteData(animal.id).subscribe((response) => {
+      this.animals = this.animals.filter(item => item.id !== animal.id)
+    })
+  }
 }

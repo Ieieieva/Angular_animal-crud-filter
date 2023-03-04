@@ -1,0 +1,31 @@
+<form 
+  class="addAnimal__form"
+  [formGroup]="addAnimalForm"
+  (ngSubmit)="onSubmit()"
+>
+  <label>
+    Animal name:
+    <input
+      type="text"
+      class="input"
+      placeholder="Name"
+      formControlName="name"
+    >
+  </label>
+  <label>
+    Animal type:
+    <select 
+      formControlName="species"
+      class="input"
+    >
+      <option value="cat">cat</option>
+      <option value="dog">dog</option>
+    </select>
+  </label>
+  <button
+    type="submit"
+    class="button-add"
+  >
+    ADD
+  </button>
+</form>
